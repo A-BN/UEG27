@@ -1,11 +1,13 @@
 name: plasmabio-template-bash
 channels:
   - conda-forge
+  - bioconda
 dependencies:
   - jupyterlab=2
   - nbresuse
   - python>=3.7
   - pip
   - nodejs
+  - bbmap
   - pip:
     - bash_kernel
