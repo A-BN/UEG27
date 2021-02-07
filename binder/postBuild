@@ -1,3 +1,4 @@
+echo "###########" POST BUILD !"
 jupyter labextension install \
   jupyterlab-topbar-extension \
   jupyterlab-system-monitor \
@@ -6,6 +7,7 @@ jupyter labextension install \
 python -m bash_kernel.install --sys-prefix
 
 ## Comment test R things
-Rscript --vanilla -e 'install.packages("tidyverse")'
-Rscript --vanilla -e 'install.packages("BiocManager"); BiocManager::install(version = "3.12")'
+Rscript --vanilla -e 'message("GLOUGLOU")'
+Rscript --vanilla -e 'install.packages("tidyverse", repos = "http://cran.irsn.fr/")'
+Rscript --vanilla -e 'install.packages("BiocManager", repos = "http://cran.irsn.fr/"); BiocManager::install(version = "3.12")'
 Rscript --vanilla -e 'BiocManager::install("ape")'
