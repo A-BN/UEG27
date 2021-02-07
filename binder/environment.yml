@@ -1,11 +1,13 @@
-name: plasmabio-template-bash
+name: plasmabio-template-UEG27
 channels:
+  - defaults
   - conda-forge
   - bioconda
 dependencies:
   - jupyterlab=2
   - nbresuse
   - python>=3.7
+  - r-base>=4.0
   - pip
   - nodejs
   - bbmap
